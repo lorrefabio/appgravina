@@ -36,9 +36,8 @@ and open the template in the editor.
                         <li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li>
                         <li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li>
                         <li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li>
-                        <li><a href="#mappa" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #d43f3a;">room</i>Mappa Luoghi</a></li>
                         <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
-                        <li><a href="#mezzi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Muoversi</a></li>
+                        <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
                         <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
                     </ul>
                 </div>
@@ -67,9 +66,8 @@ and open the template in the editor.
                         <li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li>
                         <li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li>
                         <li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li>
-                        <li><a href="#mappa" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #d43f3a;">room</i>Mappa Luoghi</a></li>
                         <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
-                        <li><a href="#mezzi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Muoversi</a></li>
+                        <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
                         <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
                     </ul>
                 </div>
@@ -144,396 +142,449 @@ and open the template in the editor.
                 &copy; 2017 Gravina in Puglia
             </div>
         </div>
-
-        <div class="modal" id="cattedrale">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Basilica Cattedrale S.Maria Assunta</b></h4>
+        <div data-role="page" id="contattaci">
+            <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;">
+                <div class="btn-group-vertical" style="width: 100%;">
+                    <ul class="" style="list-style-type: none;margin-left: -60px;">
+                        <li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li>
+                        <li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li>
+                        <li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li>
+                        <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
+                        <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
+                        <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;">
+                <a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a>
+                <h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>Contattaci</b></h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form>
+                    <div class="form-group label-floating">
+                        <label class="col-md-2 control-label" for="nome">Nome</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="nome" type="text">
+                            <p class="help-block">Scrivi qui il tuo nome.</p>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <iframe src="slider_cattedrale.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>La concattedrale di Santa Maria Assunta è il principale luogo di culto cattolico di Gravina in Puglia</p>
-                        <p>La facciata, tripartita da due lesene, è composta da tre portali, di cui quello centrale più grande ma incompiuto, e da un rosone, resto dell'antica chiesa romanica, al cui centro è collocato un bassorilievo dell'Assunta.</p> <p> I due portali laterali sono abbelliti da altorilievi e da due piccole statue raffiguranti il Cristo; il portale di sinistra è datato 1495. Il portale centrale è opera recente: essa è composta di 24 pannelli che raccontano episodi evangelici. Un altro ingresso è posto sul lato sud della cattedrale: nel frontespizio è un bassorilievo della Madonna col Bambino affiancato dalle statue tardocinquecentesche raffiguranti i santi Pietro e Paolo. Il campanile è stato ultimato nel 1698 dal cardinale Vincenzo Maria Orsini con la costruzione del "cipollone sulla sua sommità.</p>
-                        <p>Sporgente dalla navata sinistra e a strapiombo sulla gravina è il cosiddetto cappellone, costruito nella prima metà del XVII secolo, a due piani: al piano inferiore è l'oratorio della Santa Croce, sede una volta della confraternita omonima; al piano superiore, al livello della cattedrale, è la cappella del Santissimo Sacramento. Questa struttura fu voluta dal vescovo Arcasio Ricci, il cui sepolcro marmoreo è conservato nella stessa cappella, il busto che lo raffigura è opera di Francesco Mochi .</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.0898664600445!2d16.41273852328087!3d40.81757211973333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff2b759cc654d521!2sBasilica+Cattedrale+Santa+Maria+Assunta!5e0!3m2!1sit!2sus!4v1489577096982" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="form-group label-floating">
+                        <label class="col-md-2 control-label" for="email">E-mail</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="email" type="text">
+                            <p class="help-block">Scrivi qui il tuo indirizzo e-mail.</p>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                    <div class="form-group label-floating has-warning">
+                        <label class="col-md-2 control-label" for="oggetto">Oggetto</label>
+                        <div class="col-md-10">
+                            <input class="form-control" id="oggetto" type="text">
+                            <p class="help-block">Scrivi qui l'oggetto della mail.</p>
+                        </div>
+                    </div>
+                    <div class="form-group label-floating has-success">
+                        <label for="messaggio" class="col-md-2 control-label">Messaggio</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" rows="4" id="messaggio"></textarea>
+                            <span class="help-block">Scrivi qui il tuo messaggio.</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Invia<i class="material-icons" style="margin-top: -5px; margin-left: 10px">send</i></button>
+                </form>
+                <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                    &copy; 2017 Gravina in Puglia
+                </div>
+            </div>
 
+            <div class="modal" id="cattedrale">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Basilica Cattedrale S.Maria Assunta</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_cattedrale.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>La concattedrale di Santa Maria Assunta è il principale luogo di culto cattolico di Gravina in Puglia</p>
+                            <p>La facciata, tripartita da due lesene, è composta da tre portali, di cui quello centrale più grande ma incompiuto, e da un rosone, resto dell'antica chiesa romanica, al cui centro è collocato un bassorilievo dell'Assunta.</p> <p> I due portali laterali sono abbelliti da altorilievi e da due piccole statue raffiguranti il Cristo; il portale di sinistra è datato 1495. Il portale centrale è opera recente: essa è composta di 24 pannelli che raccontano episodi evangelici. Un altro ingresso è posto sul lato sud della cattedrale: nel frontespizio è un bassorilievo della Madonna col Bambino affiancato dalle statue tardocinquecentesche raffiguranti i santi Pietro e Paolo. Il campanile è stato ultimato nel 1698 dal cardinale Vincenzo Maria Orsini con la costruzione del "cipollone sulla sua sommità.</p>
+                            <p>Sporgente dalla navata sinistra e a strapiombo sulla gravina è il cosiddetto cappellone, costruito nella prima metà del XVII secolo, a due piani: al piano inferiore è l'oratorio della Santa Croce, sede una volta della confraternita omonima; al piano superiore, al livello della cattedrale, è la cappella del Santissimo Sacramento. Questa struttura fu voluta dal vescovo Arcasio Ricci, il cui sepolcro marmoreo è conservato nella stessa cappella, il busto che lo raffigura è opera di Francesco Mochi .</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.0898664600445!2d16.41273852328087!3d40.81757211973333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff2b759cc654d521!2sBasilica+Cattedrale+Santa+Maria+Assunta!5e0!3m2!1sit!2sus!4v1489577096982" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="gravina_sotteranea">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Gravina Sotterranea</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_gravina_sotterranea.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Molti hanno scritto, parlato e immortalato con immagini la lunghissima storia di Gravina, che affonda le sue radici già nel secolo VIII a.C. e, attraverso le varie civiltà, si snoda nei secoli con testimonianze stupefacenti e straordinarie. </p>
-                        <p>Nessuno, però, prima d'ora aveva pensato alla esistenza di una Gravina sotterranea, quella su cui, molto distrattamente, camminiamo quotidianamente; una Gravina altrettanto suggestiva e ricca di fascino dove il tempo, quasi d'incanto, si è fermato.</p>
-                        <p>Michele Parisi, presidente dell'Associazione Gravina Sotterranea, ha portato alla luce, con tenacia e perseveranza, una Gravina inedita e sconosciuta penetrando i misteri racchiusi nei meandri di cunicoli impraticabili con compagni fedeli, pronti a condividere i rischi di una spericolata avventura.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1067.5570482908731!2d16.41466064377569!3d40.816819290760144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387b8a9a0afced%3A0x113bfe512c281a05!2sVia+Antonio+Meucci%2C+10%2C+70024+Gravina+in+Puglia+BA!5e0!3m2!1sit!2sit!4v1489667756405" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            <div class="modal" id="gravina_sotteranea">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Gravina Sotterranea</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_gravina_sotterranea.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Molti hanno scritto, parlato e immortalato con immagini la lunghissima storia di Gravina, che affonda le sue radici già nel secolo VIII a.C. e, attraverso le varie civiltà, si snoda nei secoli con testimonianze stupefacenti e straordinarie. </p>
+                            <p>Nessuno, però, prima d'ora aveva pensato alla esistenza di una Gravina sotterranea, quella su cui, molto distrattamente, camminiamo quotidianamente; una Gravina altrettanto suggestiva e ricca di fascino dove il tempo, quasi d'incanto, si è fermato.</p>
+                            <p>Michele Parisi, presidente dell'Associazione Gravina Sotterranea, ha portato alla luce, con tenacia e perseveranza, una Gravina inedita e sconosciuta penetrando i misteri racchiusi nei meandri di cunicoli impraticabili con compagni fedeli, pronti a condividere i rischi di una spericolata avventura.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1067.5570482908731!2d16.41466064377569!3d40.816819290760144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387b8a9a0afced%3A0x113bfe512c281a05!2sVia+Antonio+Meucci%2C+10%2C+70024+Gravina+in+Puglia+BA!5e0!3m2!1sit!2sit!4v1489667756405" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="santuario">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Santuario Madonna delle Grazie</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_madonna.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Il Santuario della Madonna della Grazia venne fatto erigere da Monsignor Giustiniani nel 1602, come residenza estiva per il vescovo e per i seminaristi.</p>
-                        <p>Questa chiesa ha una particolarità: è l'unica al mondo ad avere sulla facciata principale una raffigurazione impontente oltre al solito rosone.</p>
-                        <p>I vari interventi costruttivi succedutisi negli anni sono stati eliminati con un restauro avvenuto di recente, in quanto si riteneva che fossero sovrabbondanti ed inutili. Tale restauro ha riportato in luce elementi decorativi di cui non si conosceva l’esistenza, come medaglioni e capitelli.</p>
-                        <p>La facciata del Santuario della Madonna della grazia è particolare, e si articola in due parti distinte: nella parte inferiore è rappresentato un castello merlato, in quella superiore l’aquila reale, stemma del vescovo committente. A sottolineare il fatto che fosse un vescovo a commissionare l’edificio è la mitria che conclude il timpano, monco, nella parte superiore della facciata.</p>
-                        <p>L’aquila è tempestata da frammenti di vetro colorati. Un frammento posto nell’occhio dell’aquila attira l’occhio del visitatore verso l’alto. Una linea immaginaria che parte dalla mitria sovrastante e va verso il timpano sul portone d’ingresso divide la facciata in due parti simmetriche, fatta eccezione per il collo dell’aquila.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.103241183929!2d16.4190366767676!3d40.82569592278069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b676281694efe53!2sSantuario+Madonna+delle+Grazie!5e0!3m2!1sit!2sit!4v1489675432784" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="san_felice">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Chiesa San Felice</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_san_felice.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>La chiesa di San Felice,già della Resurrezione di Nostro Signore, poi di San Felice, fu aperta al culto nel 1645 dal vescovo Cennini della Salamandra.</p>
-                        <p>La chiesa costituì un luogo unico col convento, iniziato nel 1570 e completato sei anni dopo durante l’episcopato di monsignor Bosio. Già fuori le mura, in uno spiazzo che da essi prese il nome di “Largo Cappuccini”, il convento è affidato oggi alle suore Teresiane Francescane di Gesù Crocifisso. Nella chiesa, ai piedi dell’altare dedicato alla Madonna di Lurdes, è sepolto il vescovo Francesco Maria Sanna, del quale vi è una statua davanti l’ingresso della chiesa.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1509.608947852917!2d16.422055484794626!3d40.823177356522464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf233e59b93%3A0xcc7c3165a4e6ce2f!2sChiesa+Convento+San+Felice%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490086259861" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            <div class="modal" id="santuario">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Santuario Madonna delle Grazie</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_madonna.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Il Santuario della Madonna della Grazia venne fatto erigere da Monsignor Giustiniani nel 1602, come residenza estiva per il vescovo e per i seminaristi.</p>
+                            <p>Questa chiesa ha una particolarità: è l'unica al mondo ad avere sulla facciata principale una raffigurazione impontente oltre al solito rosone.</p>
+                            <p>I vari interventi costruttivi succedutisi negli anni sono stati eliminati con un restauro avvenuto di recente, in quanto si riteneva che fossero sovrabbondanti ed inutili. Tale restauro ha riportato in luce elementi decorativi di cui non si conosceva l’esistenza, come medaglioni e capitelli.</p>
+                            <p>La facciata del Santuario della Madonna della grazia è particolare, e si articola in due parti distinte: nella parte inferiore è rappresentato un castello merlato, in quella superiore l’aquila reale, stemma del vescovo committente. A sottolineare il fatto che fosse un vescovo a commissionare l’edificio è la mitria che conclude il timpano, monco, nella parte superiore della facciata.</p>
+                            <p>L’aquila è tempestata da frammenti di vetro colorati. Un frammento posto nell’occhio dell’aquila attira l’occhio del visitatore verso l’alto. Una linea immaginaria che parte dalla mitria sovrastante e va verso il timpano sul portone d’ingresso divide la facciata in due parti simmetriche, fatta eccezione per il collo dell’aquila.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.103241183929!2d16.4190366767676!3d40.82569592278069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b676281694efe53!2sSantuario+Madonna+delle+Grazie!5e0!3m2!1sit!2sit!4v1489675432784" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="rupestre">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Chiesa Rupestre</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_rupestre.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>La chiesa di <b>San Michele delle Grotte</b> di Gravina in Puglia, si trova sul lato del burrone all’estremità del rione Fondovico.</p>
-                        <p>È composto da una serie di ambienti intercomunicanti. La chiesa è costituita da un deambulatorio, e la chiesa vera e propria è ad aula divisa in 3 navate e sorretta da 14 pilastri. Nel primo abside a sinistra, troviamo un affresco raffigurante il Cristo tra i santi Paolo e Michele. Nell’abside centrale vi è un’altare, e la statua di San Michele Arcangelo. Difronte all’altare centrale, su di un pilastro, è parzialmente visibile un affresco che rappresenta l’episodio della crocifissione, eseguito tra il XVII-XVIII secolo. In fondo alla chiesa-grotta, possiamo notare un’altra stanza, lì come narra la leggenda, sono conservate alcune ossa dei gravinesi morti in battaglia contro i saraceni. Questa grotta è intitolata al Santo protettore San Michele Arcangelo Gabriele.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.8888577827345!2d16.412241185106776!3d40.815762117828086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc676795e45d31e39!2sChiesa+rupestre+di+San+Michele+delle+Grotte!5e0!3m2!1sit!2sus!4v1490087271848" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="san_sebastiano">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Chiesa San Sebastiano</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_san_sebastiano.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>La chiesa di San Sebastiano di Gravina in Puglia, fu costruita agli inizi del XV secolo come si evince dalle colonne a pianta ottagonale, che dividono le tre navate, è stata rifatta nel Settecento nella parte superiore e nei muri perimetrali. Rifacimenti e sovrapposizioni di stili di epoche diverse sono evidenti nella facciata esterna che, apparentemente, sembra tutta del Settecento. Degni di nota sono un crocifisso ligneo e l’altare in legno intarsiato baroccheggiante commissionato dagli Orsini.</p>
-                        <p>Alla chiesa, che conserva un presepe permanente in pietra nella nicchia coperta dalla tela di San Sebastian, è annesso lo splendido chiostro di un convento benedettino del XV secolo, movimentato da archi poggianti su pilastri con capitelli dai vaghi motivi floreali e da colonne laterali su cui si muove il porticato del convento. Al centro, su una pavimentazione in terracotta a spina di pesce, domina il pozzo originale. Il pregio del chiostro è nella luminosità realizzata in una sintesi di linee e colori e armonizzata nel chiaroscuro delle pareti laterali su cui il recente restauro ha riportato alla luce gli originali affreschi secenteschi.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1509.8547998019033!2d16.41834625646723!3d40.81237485615441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b939087e342311!2sChiesa+e+Convento+di+San+Sebastiano!5e0!3m2!1sit!2sus!4v1490088430616" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            <div class="modal" id="san_felice">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Chiesa San Felice</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_san_felice.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>La chiesa di San Felice,già della Resurrezione di Nostro Signore, poi di San Felice, fu aperta al culto nel 1645 dal vescovo Cennini della Salamandra.</p>
+                            <p>La chiesa costituì un luogo unico col convento, iniziato nel 1570 e completato sei anni dopo durante l’episcopato di monsignor Bosio. Già fuori le mura, in uno spiazzo che da essi prese il nome di “Largo Cappuccini”, il convento è affidato oggi alle suore Teresiane Francescane di Gesù Crocifisso. Nella chiesa, ai piedi dell’altare dedicato alla Madonna di Lurdes, è sepolto il vescovo Francesco Maria Sanna, del quale vi è una statua davanti l’ingresso della chiesa.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1509.608947852917!2d16.422055484794626!3d40.823177356522464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bf233e59b93%3A0xcc7c3165a4e6ce2f!2sChiesa+Convento+San+Felice%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490086259861" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="botromagno">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Parco Archeologico Botromagno</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_botromagno.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>A ridosso della città di Gravina in Puglia, sul “Colle di Botromagno”, con oltre 400 ettari esiste un insediamento che oggi costituisce un vero e proprio “Parco archeologico”. Salendo l’erta si incontra una tomba a tbo-los prima di inoltrarsi nel mito di un’antica città che è attestata sin dalla fine del IX secolo a.C.</p>
-                        <p>Sul colle sono visibili tombe a semicamera intonacate e dipinte databili al V secolo a.C:, a camera scavata nella roccia con dromos d’accesso databili al IV e al III e resti di abitazioni tra le quali una grande villa del II-I secolo a.C.
-                            La ricchezza e la complessità di quest’area sono tali da attirare l’attenzione di numerosi studiosi stranieri che sin dalla metà degli anni Se3ssanta del secolo scorso hanno iniziato campagne di scavo sistematiche. Sono stati cosi portati alla luce fondamenta di case a più strati, tombe a camera, a sarcofago e a cappuccino anche dipinte e talora articolate, ricchi di colonne e pezzi di architravi certamente provenienti da un tempio.</p>
-                        <p>Grande fascino ispira il materiale di corredo funerario rinvenuto nelle tombe, comprendente vasi ad impasto bruno e nero indigenta e non, geometrica e con figure di guerrieri, di satiri e di fanciulle eleganti nelle loro vesti e pieghe: crateri, idrie, skifoi, cantari, lekiti, lebeti, stamni.
-                            Fantastici sono gli oggetti in bronzo e ferro, come punte di lance e spade, strigili e fibule, e oggetti in oro, come spille, anelli e collane.
-                            Particolarmente interessanti sono i corredi rinvenuti nelle tombe dei bambini: una bambola snodabile, sonagli a forma di animali e un succhiatoio antisinghiozzo.
-                            Tutti questi oggetti sono custoditi presso il Museo “Pomarici-Santomasi”.</p>
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3239707895686!2d16.411809843554604!3d40.82084713693664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387b8bfc7e69cd%3A0x5c8abd5064be2bb7!2sParco+Archeologico+di+Botromagno%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490089089214" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="alta_murgia">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Parco Nazionale dell'Alta Murgia</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_alta_murgia.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>ll Parco nazionale dell’Alta Murgia, abbreviato in PnAM, istituito nel 2004, è una area naturale protetta situata in Puglia, nelle province di Bari e di Barletta-Andria-Trani. La sede amministrativa del Parco è a Gravina in Puglia, in Via Firenze n. 10.</p>
-                        <p>Il parco ha un’estensione di 68.033 ettari. Si estende nella provincia di Barletta-Andria-Trani e della città metropolitana di Bari, sulla parte più elevata dell’Altopiano delle Murge di Nord-Ovest.</p>
-                        <p>Coincide con una parte della più estesa Zona di Protezione Speciale istituita per proteggere la Steppa a Graminacee, habitat del Falco Grillaio. (Sito di Importanza Comunitaria).</p>
-                        <p>Tra le principali attrazioni del parco va annoverato Castel del Monte, uno dei più famosi castelli dell’intero meridione italiano.</p>
+            <div class="modal" id="rupestre">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Chiesa Rupestre</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_rupestre.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>La chiesa di <b>San Michele delle Grotte</b> di Gravina in Puglia, si trova sul lato del burrone all’estremità del rione Fondovico.</p>
+                            <p>È composto da una serie di ambienti intercomunicanti. La chiesa è costituita da un deambulatorio, e la chiesa vera e propria è ad aula divisa in 3 navate e sorretta da 14 pilastri. Nel primo abside a sinistra, troviamo un affresco raffigurante il Cristo tra i santi Paolo e Michele. Nell’abside centrale vi è un’altare, e la statua di San Michele Arcangelo. Difronte all’altare centrale, su di un pilastro, è parzialmente visibile un affresco che rappresenta l’episodio della crocifissione, eseguito tra il XVII-XVIII secolo. In fondo alla chiesa-grotta, possiamo notare un’altra stanza, lì come narra la leggenda, sono conservate alcune ossa dei gravinesi morti in battaglia contro i saraceni. Questa grotta è intitolata al Santo protettore San Michele Arcangelo Gabriele.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d754.8888577827345!2d16.412241185106776!3d40.815762117828086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc676795e45d31e39!2sChiesa+rupestre+di+San+Michele+delle+Grotte!5e0!3m2!1sit!2sus!4v1490087271848" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1509.804048799474!2d16.418576!3d40.814605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9756472911a07acb!2sParco+Nazionale+dell&#39;Alta+Murgia!5e0!3m2!1sit!2sus!4v1490089541947" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="bosco">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Bosco SIC DIfesa Grande</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_bosco.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Il Bosco SIC Difesa Grande è situato nel comune di Gravina in Puglia, con i suoi circa 1890 ettari è uno dei più importanti complessi boscati dell’intera Puglia. Situato a 6 km dal centro abitato di Gravina, è un bosco naturale, spontaneo e rappresenta una residua testimonianza della rigogliosa foresta mesofita che ricopriva gran parte dell’intera Puglia.</p>
-                        <p>La parte di querceto è formata, principalmente, da tre specie di caducifoglie: roverella (Quercus pubescens s.l.), cerro (Quercus cerris L.) e farnetto (Quercus fra inetto Ten.).</p>
-                        <p>Il Difesa Grande, uno dei complessi boschivi più importanti della nostra Regione è dal 1998 un Bosco SIC – Sito di Importanza Comunitaria – a dimostrazione della ricchezza della biodiversità che rendono unico questo scenario naturalistico.</p>
+            <div class="modal" id="san_sebastiano">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Chiesa San Sebastiano</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_san_sebastiano.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>La chiesa di San Sebastiano di Gravina in Puglia, fu costruita agli inizi del XV secolo come si evince dalle colonne a pianta ottagonale, che dividono le tre navate, è stata rifatta nel Settecento nella parte superiore e nei muri perimetrali. Rifacimenti e sovrapposizioni di stili di epoche diverse sono evidenti nella facciata esterna che, apparentemente, sembra tutta del Settecento. Degni di nota sono un crocifisso ligneo e l’altare in legno intarsiato baroccheggiante commissionato dagli Orsini.</p>
+                            <p>Alla chiesa, che conserva un presepe permanente in pietra nella nicchia coperta dalla tela di San Sebastian, è annesso lo splendido chiostro di un convento benedettino del XV secolo, movimentato da archi poggianti su pilastri con capitelli dai vaghi motivi floreali e da colonne laterali su cui si muove il porticato del convento. Al centro, su una pavimentazione in terracotta a spina di pesce, domina il pozzo originale. Il pregio del chiostro è nella luminosità realizzata in una sintesi di linee e colori e armonizzata nel chiaroscuro delle pareti laterali su cui il recente restauro ha riportato alla luce gli originali affreschi secenteschi.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1509.8547998019033!2d16.41834625646723!3d40.81237485615441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b939087e342311!2sChiesa+e+Convento+di+San+Sebastiano!5e0!3m2!1sit!2sus!4v1490088430616" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8922.917438802939!2d16.393217308860734!3d40.763871717866756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d211f7c07217d7b!2sArea+Parcheggio+Localit%C3%A0+Terra+Rossa!5e1!3m2!1sit!2sus!4v1490090046606" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="ponte">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Ponte Acquedotto</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_ponte.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Il ponte della Gravina è un ‘importante struttura ad archi, alto 37 m. lungo 90 m. e largo 5,5 m. che collega le due sponde del torrente “Gravina”. Fu costruito per permettere l’attraversamento del Crapo (l’antico nome del torrente Gravina), e consentire ai fedeli di raggiungere la miracolosa chiesetta della Madonna della Stella.</p>
-                        <p>La costruzione fu iniziata nel 1743 e completata nel 1778, finanziata dai Duchi Orsini.</p>
-                        <p>Probabilmente il ponte, reso instabile dal sisma del 1686, crollò nel terremoto del 1722. Gli Orsini ne ordinarono, intorno alla metà del Settecento, la ricostruzione e la trasformazione in acquedotto, per portare sotto le mura della città le acque delle sorgenti Sant’Angelo e S. Giacomo. La struttura sulla quale poggiava la tubatura dell’acqua che collegava le 2 fontane (piloni), ancora oggi esistenti ai due lati del ponte, era costituita da 25 archi disposti lungo la spalliera.
-                            Una delle due spalliere è più alta perché in questa vi passano le condutture dell’acquedotto.</p>
+            <div class="modal" id="botromagno">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Parco Archeologico Botromagno</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_botromagno.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>A ridosso della città di Gravina in Puglia, sul “Colle di Botromagno”, con oltre 400 ettari esiste un insediamento che oggi costituisce un vero e proprio “Parco archeologico”. Salendo l’erta si incontra una tomba a tbo-los prima di inoltrarsi nel mito di un’antica città che è attestata sin dalla fine del IX secolo a.C.</p>
+                            <p>Sul colle sono visibili tombe a semicamera intonacate e dipinte databili al V secolo a.C:, a camera scavata nella roccia con dromos d’accesso databili al IV e al III e resti di abitazioni tra le quali una grande villa del II-I secolo a.C.
+                                La ricchezza e la complessità di quest’area sono tali da attirare l’attenzione di numerosi studiosi stranieri che sin dalla metà degli anni Se3ssanta del secolo scorso hanno iniziato campagne di scavo sistematiche. Sono stati cosi portati alla luce fondamenta di case a più strati, tombe a camera, a sarcofago e a cappuccino anche dipinte e talora articolate, ricchi di colonne e pezzi di architravi certamente provenienti da un tempio.</p>
+                            <p>Grande fascino ispira il materiale di corredo funerario rinvenuto nelle tombe, comprendente vasi ad impasto bruno e nero indigenta e non, geometrica e con figure di guerrieri, di satiri e di fanciulle eleganti nelle loro vesti e pieghe: crateri, idrie, skifoi, cantari, lekiti, lebeti, stamni.
+                                Fantastici sono gli oggetti in bronzo e ferro, come punte di lance e spade, strigili e fibule, e oggetti in oro, come spille, anelli e collane.
+                                Particolarmente interessanti sono i corredi rinvenuti nelle tombe dei bambini: una bambola snodabile, sonagli a forma di animali e un succhiatoio antisinghiozzo.
+                                Tutti questi oggetti sono custoditi presso il Museo “Pomarici-Santomasi”.</p>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.3104037452831!2d16.41280921439522!3d40.82013054588966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d126814949a2a3c!2sPonte+Acquedotto!5e1!3m2!1sit!2sus!4v1490092637307" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.3239707895686!2d16.411809843554604!3d40.82084713693664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387b8bfc7e69cd%3A0x5c8abd5064be2bb7!2sParco+Archeologico+di+Botromagno%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490089089214" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="biblioteca">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Biblioteca Finya</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_biblioteca.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>La biblioteca Finya, di Gravina in Puglia, è la più antica biblioteca pubblica sorta in Puglia. Prende il nome dal massimo donatore,il cardinale Francesco Antonio Finy, ma la prima raccolta di libri fu del vescovo D. Cennini (1645-1684), che lasciò la sua biblioteca a beneficio del suo clero.</p>
-                        <p>La biblioteca Finya, fu incrementata con i lasciti dell’arcidiacono M.Lettieri nel 1700 e di p.p. Benedetto XII nel
-                            1730. Il card Finy fu colui che completò la biblioteca lasciando la sua ed una dote di due mila ducati, inoltre, prima di morire, lasciò seicento ducati per la costruzione di una nuova biblioteca. Il progetto fu dell’architetto Donato Giannuzzi di Altamura.</p>
-                        <p>La scelta dell’ubicazione vide il capitolo cattedrale costretto a permutare con l’università le stanze adibite a carcere e il “lamione” delle riunioni consigliari.
-                            Nel 1743 la costruzione fu ultimata. La biblioteca fu mal amministrata, fino alla completa chiusura nel sec. XIX e fino al 1942, vi si aggiunse la biblioteca della fam. Scacchi. Solo durante il vescovado di mons. G. Vairo (1962-1970) fu riordinata dal prof. Fera. In seguito a tale riordino scomparvero pezzi preziosi. Solo da qualche anno la biblioteca è stata riaperta dopo un restauro. Il suo patrimonio librario ammonta a n. 12816 (voci di ingresso), di cui 21 incunanboli, n 333 cinquecentine , 1 manoscritto miniato (ufficio della beata vergine di anonimo sec XV) n. 61 periodici, il resto volumi. Gli argomenti a soggetto sono : letteratura italiana, latina, greca, filosofia, diritto civile e canonico, decisioni della sacra rota, medicina e scienze, oper varie, sezione musicale.</p>
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.7689125756633!2d16.414564977548057!3d40.81726931519882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a6ddd62ac8af0e9!2sBiblioteca+Capitolare+Finia!5e0!3m2!1sit!2sus!4v1490093389135" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal" id="castello">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Castello Svevo</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_castello.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Il castello svevo di Gravina in Puglia, fu fatto edificare nel 1224 da Federico II di Svevia,che diede l’incarico ad un architetto fiorentino, Fuccio.Fu completato nel 1277,  anno in cui Federico alloggiò per la prima volta.</p>
-                        <p>Il castello Svevo di Gravina in Puglia, fu fatto costruire perché, Federico II di Svevia, era un grande appassionato di caccia. Infatti, in quell’epoca Gravina aveva numerosi e vasti boschi tutti popolati di armenti e ricchi di selvaggina, ed un lago artificiale posto nelle vicinanze dell’abitato. Questo, allora assai ben tenuto, era della superficie di 4 km quadrati e occupava tutta la zona detta “La Pescara”. Era pieno di trote ed anguille e veniva sfruttato anche per la pesca.</p>
-                        <p>Il castello, a pianta rettangolare, 58,5m x 29m , fu costruito in mazzaro e conteneva 4 torri, che lo fiancheggiavano, e diverse sale sotterranee.</p>
-                        <p>Il castello Svevo di Gravina era costruito su tre piani (compreso l’ammezzato), di cui oggi restano soltanto parte dei muri perimetrali e del basamento.</p>
+            <div class="modal" id="alta_murgia">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Parco Nazionale dell'Alta Murgia</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_alta_murgia.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>ll Parco nazionale dell’Alta Murgia, abbreviato in PnAM, istituito nel 2004, è una area naturale protetta situata in Puglia, nelle province di Bari e di Barletta-Andria-Trani. La sede amministrativa del Parco è a Gravina in Puglia, in Via Firenze n. 10.</p>
+                            <p>Il parco ha un’estensione di 68.033 ettari. Si estende nella provincia di Barletta-Andria-Trani e della città metropolitana di Bari, sulla parte più elevata dell’Altopiano delle Murge di Nord-Ovest.</p>
+                            <p>Coincide con una parte della più estesa Zona di Protezione Speciale istituita per proteggere la Steppa a Graminacee, habitat del Falco Grillaio. (Sito di Importanza Comunitaria).</p>
+                            <p>Tra le principali attrazioni del parco va annoverato Castel del Monte, uno dei più famosi castelli dell’intero meridione italiano.</p>
 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1509.804048799474!2d16.418576!3d40.814605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9756472911a07acb!2sParco+Nazionale+dell&#39;Alta+Murgia!5e0!3m2!1sit!2sus!4v1490089541947" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7373202474146!2d16.418973950651644!3d40.833733092688135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bea5ebe85bf%3A0x1c2825d1a94648d8!2sCastello+Svevo%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490093933696" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="museo">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title"><b>Museo Fondazione Santomasi</b></h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="slider_museo.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
-                        <p>Il palazzo Pomarici Santomasi è un edificio del XVII secolo, che pur senza imponenza architettonica, si appalesa subito quale abitazione signorile.</p>
-                        <p>Nel 1797, i Reali di Napoli, in un loro viaggio in Puglia si fermarono due volte a Gravina in Puglia: i Sovrani alloggiarono nel Palazzo Ducale, ma il ministro Acton ed altre personalità del seguito Reale, trovarono appunto nel Palazzo Pomarici Santomasi degna ospitalità.</p>
-                        <p>Sulla facciata dell’ edificio è apposta da tempo la seguente epigrafe:
-                            ETTORE POMARICI SANTOMASI “Morendo nel 1917 senza discendenza maschile, donò al Municipio di Gravina perché insieme coi domestici ricordi vi fossero serbate le memorie cittadine, questo suo avito Palazzo che fu dei Santomasi, cospicui cittadini gravinesi e passò poi per eredità ai Pomarici nobili montepelosani i quali, presi qui stanza, furono per un secolo e mezzo decoro della patria adottiva – MCMXXI”.</p>
-                        <p>La Fondazione “Ettore Pomarici Santomasi” si propone quale realtà che sottolinea, con la sua strutturazione operativa, la capacità di interagire, intessendo sul territorio una fitta rete di attività capace di dare concreta dimostrazione del livello di civiltà storica raggiunto.</p>
-
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d377.4289424874224!2d16.41491965277863!3d40.818483985073264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55ef019afdeaefc8!2sFondazione+Ettore+Pomarici+Santomasi!5e0!3m2!1sit!2sus!4v1490094413001" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="modal" id="bosco">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Bosco SIC DIfesa Grande</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_bosco.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Il Bosco SIC Difesa Grande è situato nel comune di Gravina in Puglia, con i suoi circa 1890 ettari è uno dei più importanti complessi boscati dell’intera Puglia. Situato a 6 km dal centro abitato di Gravina, è un bosco naturale, spontaneo e rappresenta una residua testimonianza della rigogliosa foresta mesofita che ricopriva gran parte dell’intera Puglia.</p>
+                            <p>La parte di querceto è formata, principalmente, da tre specie di caducifoglie: roverella (Quercus pubescens s.l.), cerro (Quercus cerris L.) e farnetto (Quercus fra inetto Ten.).</p>
+                            <p>Il Difesa Grande, uno dei complessi boschivi più importanti della nostra Regione è dal 1998 un Bosco SIC – Sito di Importanza Comunitaria – a dimostrazione della ricchezza della biodiversità che rendono unico questo scenario naturalistico.</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8922.917438802939!2d16.393217308860734!3d40.763871717866756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d211f7c07217d7b!2sArea+Parcheggio+Localit%C3%A0+Terra+Rossa!5e1!3m2!1sit!2sus!4v1490090046606" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="ponte">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Ponte Acquedotto</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_ponte.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Il ponte della Gravina è un ‘importante struttura ad archi, alto 37 m. lungo 90 m. e largo 5,5 m. che collega le due sponde del torrente “Gravina”. Fu costruito per permettere l’attraversamento del Crapo (l’antico nome del torrente Gravina), e consentire ai fedeli di raggiungere la miracolosa chiesetta della Madonna della Stella.</p>
+                            <p>La costruzione fu iniziata nel 1743 e completata nel 1778, finanziata dai Duchi Orsini.</p>
+                            <p>Probabilmente il ponte, reso instabile dal sisma del 1686, crollò nel terremoto del 1722. Gli Orsini ne ordinarono, intorno alla metà del Settecento, la ricostruzione e la trasformazione in acquedotto, per portare sotto le mura della città le acque delle sorgenti Sant’Angelo e S. Giacomo. La struttura sulla quale poggiava la tubatura dell’acqua che collegava le 2 fontane (piloni), ancora oggi esistenti ai due lati del ponte, era costituita da 25 archi disposti lungo la spalliera.
+                                Una delle due spalliere è più alta perché in questa vi passano le condutture dell’acquedotto.</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.3104037452831!2d16.41280921439522!3d40.82013054588966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d126814949a2a3c!2sPonte+Acquedotto!5e1!3m2!1sit!2sus!4v1490092637307" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="biblioteca">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Biblioteca Finya</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_biblioteca.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>La biblioteca Finya, di Gravina in Puglia, è la più antica biblioteca pubblica sorta in Puglia. Prende il nome dal massimo donatore,il cardinale Francesco Antonio Finy, ma la prima raccolta di libri fu del vescovo D. Cennini (1645-1684), che lasciò la sua biblioteca a beneficio del suo clero.</p>
+                            <p>La biblioteca Finya, fu incrementata con i lasciti dell’arcidiacono M.Lettieri nel 1700 e di p.p. Benedetto XII nel
+                                1730. Il card Finy fu colui che completò la biblioteca lasciando la sua ed una dote di due mila ducati, inoltre, prima di morire, lasciò seicento ducati per la costruzione di una nuova biblioteca. Il progetto fu dell’architetto Donato Giannuzzi di Altamura.</p>
+                            <p>La scelta dell’ubicazione vide il capitolo cattedrale costretto a permutare con l’università le stanze adibite a carcere e il “lamione” delle riunioni consigliari.
+                                Nel 1743 la costruzione fu ultimata. La biblioteca fu mal amministrata, fino alla completa chiusura nel sec. XIX e fino al 1942, vi si aggiunse la biblioteca della fam. Scacchi. Solo durante il vescovado di mons. G. Vairo (1962-1970) fu riordinata dal prof. Fera. In seguito a tale riordino scomparvero pezzi preziosi. Solo da qualche anno la biblioteca è stata riaperta dopo un restauro. Il suo patrimonio librario ammonta a n. 12816 (voci di ingresso), di cui 21 incunanboli, n 333 cinquecentine , 1 manoscritto miniato (ufficio della beata vergine di anonimo sec XV) n. 61 periodici, il resto volumi. Gli argomenti a soggetto sono : letteratura italiana, latina, greca, filosofia, diritto civile e canonico, decisioni della sacra rota, medicina e scienze, oper varie, sezione musicale.</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.7689125756633!2d16.414564977548057!3d40.81726931519882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a6ddd62ac8af0e9!2sBiblioteca+Capitolare+Finia!5e0!3m2!1sit!2sus!4v1490093389135" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="castello">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Castello Svevo</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_castello.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Il castello svevo di Gravina in Puglia, fu fatto edificare nel 1224 da Federico II di Svevia,che diede l’incarico ad un architetto fiorentino, Fuccio.Fu completato nel 1277,  anno in cui Federico alloggiò per la prima volta.</p>
+                            <p>Il castello Svevo di Gravina in Puglia, fu fatto costruire perché, Federico II di Svevia, era un grande appassionato di caccia. Infatti, in quell’epoca Gravina aveva numerosi e vasti boschi tutti popolati di armenti e ricchi di selvaggina, ed un lago artificiale posto nelle vicinanze dell’abitato. Questo, allora assai ben tenuto, era della superficie di 4 km quadrati e occupava tutta la zona detta “La Pescara”. Era pieno di trote ed anguille e veniva sfruttato anche per la pesca.</p>
+                            <p>Il castello, a pianta rettangolare, 58,5m x 29m , fu costruito in mazzaro e conteneva 4 torri, che lo fiancheggiavano, e diverse sale sotterranee.</p>
+                            <p>Il castello Svevo di Gravina era costruito su tre piani (compreso l’ammezzato), di cui oggi restano soltanto parte dei muri perimetrali e del basamento.</p>
 
 
-        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script>
-            $(function () {
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.7373202474146!2d16.418973950651644!3d40.833733092688135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387bea5ebe85bf%3A0x1c2825d1a94648d8!2sCastello+Svevo%2C+70024+Gravina+in+Puglia+BA%2C+Italia!5e0!3m2!1sit!2sus!4v1490093933696" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
-                    var index = $('.bs-component').index($(this).parent());
-                    $.get(window.location.href, function (data) {
-                        var html = $(data).find('.bs-component').eq(index).html();
-                        html = cleanSource(html);
-                        $("#source-modal pre").text(html);
-                        $("#source-modal").modal();
-                    })
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                });
+            <div class="modal" id="museo">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title"><b>Museo Fondazione Santomasi</b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="slider_museo.html" style="width:640px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+                            <p>Il palazzo Pomarici Santomasi è un edificio del XVII secolo, che pur senza imponenza architettonica, si appalesa subito quale abitazione signorile.</p>
+                            <p>Nel 1797, i Reali di Napoli, in un loro viaggio in Puglia si fermarono due volte a Gravina in Puglia: i Sovrani alloggiarono nel Palazzo Ducale, ma il ministro Acton ed altre personalità del seguito Reale, trovarono appunto nel Palazzo Pomarici Santomasi degna ospitalità.</p>
+                            <p>Sulla facciata dell’ edificio è apposta da tempo la seguente epigrafe:
+                                ETTORE POMARICI SANTOMASI “Morendo nel 1917 senza discendenza maschile, donò al Municipio di Gravina perché insieme coi domestici ricordi vi fossero serbate le memorie cittadine, questo suo avito Palazzo che fu dei Santomasi, cospicui cittadini gravinesi e passò poi per eredità ai Pomarici nobili montepelosani i quali, presi qui stanza, furono per un secolo e mezzo decoro della patria adottiva – MCMXXI”.</p>
+                            <p>La Fondazione “Ettore Pomarici Santomasi” si propone quale realtà che sottolinea, con la sua strutturazione operativa, la capacità di interagire, intessendo sul territorio una fitta rete di attività capace di dare concreta dimostrazione del livello di civiltà storica raggiunto.</p>
 
-                $('.bs-component [data-toggle="popover"]').popover();
-                $('.bs-component [data-toggle="tooltip"]').tooltip();
 
-                $(".bs-component").hover(function () {
-                    $(this).append($button);
-                    $button.show();
-                }, function () {
-                    $button.hide();
-                });
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d377.4289424874224!2d16.41491965277863!3d40.818483985073264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55ef019afdeaefc8!2sFondazione+Ettore+Pomarici+Santomasi!5e0!3m2!1sit!2sus!4v1490094413001" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
 
-                function cleanSource(html) {
-                    var lines = html.split(/\n/);
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    lines.shift();
-                    lines.splice(-1, 1);
 
-                    var indentSize = lines[0].length - lines[0].trim().length,
-                            re = new RegExp(" {" + indentSize + "}");
+            <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="js/bootstrap.min.js" type="text/javascript"></script>
+            <script>
+                $(function () {
 
-                    lines = lines.map(function (line) {
-                        if (line.match(re)) {
-                            line = line.substring(indentSize);
-                        }
+                    var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
+                        var index = $('.bs-component').index($(this).parent());
+                        $.get(window.location.href, function (data) {
+                            var html = $(data).find('.bs-component').eq(index).html();
+                            html = cleanSource(html);
+                            $("#source-modal pre").text(html);
+                            $("#source-modal").modal();
+                        })
 
-                        return line;
                     });
 
-                    lines = lines.join("\n");
+                    $('.bs-component [data-toggle="popover"]').popover();
+                    $('.bs-component [data-toggle="tooltip"]').tooltip();
 
-                    return lines;
-                }
+                    $(".bs-component").hover(function () {
+                        $(this).append($button);
+                        $button.show();
+                    }, function () {
+                        $button.hide();
+                    });
 
-                $(".icons-material .icon").each(function () {
-                    $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
-                });
+                    function cleanSource(html) {
+                        var lines = html.split(/\n/);
 
-            })();
+                        lines.shift();
+                        lines.splice(-1, 1);
 
-        </script>
-        <script src="dist/js/ripples.min.js"></script>
-        <script src="dist/js/material.min.js"></script>
-        <script src="js/snackbar.min.js" type="text/javascript"></script>
-        <script src="js/jquery.nouislider.min.js" type="text/javascript"></script>
-        <script>
-            $(function () {
-                $.material.init();
-                $(".shor").noUiSlider({
-                    start: 40,
-                    connect: "lower",
-                    range: {
-                        min: 0,
-                        max: 100
+                        var indentSize = lines[0].length - lines[0].trim().length,
+                                re = new RegExp(" {" + indentSize + "}");
+
+                        lines = lines.map(function (line) {
+                            if (line.match(re)) {
+                                line = line.substring(indentSize);
+                            }
+
+                            return line;
+                        });
+
+                        lines = lines.join("\n");
+
+                        return lines;
                     }
-                });
 
-                $(".svert").noUiSlider({
-                    orientation: "vertical",
-                    start: 40,
-                    connect: "lower",
-                    range: {
-                        min: 0,
-                        max: 100
-                    }
+                    $(".icons-material .icon").each(function () {
+                        $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+                    });
+
+                })();
+
+            </script>
+            <script src="dist/js/ripples.min.js"></script>
+            <script src="dist/js/material.min.js"></script>
+            <script src="js/snackbar.min.js" type="text/javascript"></script>
+            <script src="js/jquery.nouislider.min.js" type="text/javascript"></script>
+            <script>
+                $(function () {
+                    $.material.init();
+                    $(".shor").noUiSlider({
+                        start: 40,
+                        connect: "lower",
+                        range: {
+                            min: 0,
+                            max: 100
+                        }
+                    });
+
+                    $(".svert").noUiSlider({
+                        orientation: "vertical",
+                        start: 40,
+                        connect: "lower",
+                        range: {
+                            min: 0,
+                            max: 100
+                        }
+                    });
                 });
-            });
-        </script>
-        <script src="dist/js/jquery.dropdown.js" type="text/javascript"></script>
-        <script src="dist/js/jquery.nouislider.min.js" type="text/javascript"></script>
+            </script>
+            <script src="dist/js/jquery.dropdown.js" type="text/javascript"></script>
+            <script src="dist/js/jquery.nouislider.min.js" type="text/javascript"></script>
     </body>
 </html>
