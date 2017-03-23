@@ -39,7 +39,7 @@ and open the template in the editor.
                         <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
                         <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
                         <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
-                        <li><a href="#preferiti" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li>
+                        <li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,15 +90,15 @@ and open the template in the editor.
                         <h3 class="panel-title">Chiese</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="cattedrale" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cattedrale" style="width: 75%;">Basilica Cattedrale</button></div>
-                        <div class="cattedrale" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#santuario" style="width: 75%;">Santuario</button></div>
-                        <div class="cattedrale" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#san_felice" style="width: 75%;">Chiesa San Felice</button></div>
-                        <div class="cattedrale" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rupestre" style="width: 75%;">Chiesa Rupestre</button></div>
-                        <div class="cattedrale" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#san_sebastiano" style="width: 75%;">Chiesa San Sebastiano</button></div>
 
                     </div>
@@ -108,11 +108,11 @@ and open the template in the editor.
                         <h3 class="panel-title">Parchi</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="botromagno" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#botromagno" style="width: 75%;">Parco Archeologico Botromagno</button></div>
-                        <div class="alta_murgia" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alta_murgia" style="width: 75%;">Parco Nazionale dell'Alta Murgia</button></div>
-                        <div class="bosco" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bosco" style="width: 75%;">Bosco SIC Difesa Grande</button></div>
 
                     </div>
@@ -122,11 +122,11 @@ and open the template in the editor.
                         <h3 class="panel-title">Monumenti</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="ponte" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ponte" style="width: 75%;">Ponte Acquedotto</button></div>
-                        <div class="biblioteca" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#biblioteca" style="width: 75%;">Biblioteca Finya</button></div>
-                        <div class="castello" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#castello" style="width: 75%;">Castello Svevo</button></div>
 
 
@@ -137,9 +137,9 @@ and open the template in the editor.
                         <h3 class="panel-title">Musei</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="museo" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#museo" style="width: 75%;">Museo Fondazione Santomasi</button></div>
-                        <div class="gravina_sotterranea" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
+                        <div class="bottone_preferiti" style="width:100%; float:left;"><a class="btn btn-default" style="width: 10%;"><i class="material-icons" style="margin-top:-3px; margin-left: -12px;">grade</i></a>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gravina_sotteranea" style="width: 75%;">Gravina Sotterranea</button></div>
 
                     </div>
@@ -467,7 +467,7 @@ and open the template in the editor.
                         <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
                         <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
                         <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
-                        <li><a href="#preferiti" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li>
+                        <li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li>
                     </ul>
                 </div>
             </div>
@@ -522,7 +522,7 @@ and open the template in the editor.
             </div>
             <div data-role="main" class="ui-content">
 
-                <form>
+                <form id="contatta">
                     <div class="form-group label-floating">
                         <label class="col-md-2 control-label" for="nome">Nome</label>
                         <div class="col-md-10">
@@ -560,11 +560,131 @@ and open the template in the editor.
             </div>
         </div>
 
-        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <div data-role="page" id="preferiti">
+            <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;">
+                <div class="btn-group-vertical" style="width: 100%;">
+                    <ul class="" style="list-style-type: none;margin-left: -60px;">
+                        <li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li>
+                        <li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li>
+                        <li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li>
+                        <li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li>
+                        <li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li>
+                        <li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li>
+                        <li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;">
+                <a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a>
+                <h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1>
+            </div>
+            <div id="cancella_preferiti" data-role="main" class="ui-content">
+
+
+
+                <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                    &copy; 2017 Gravina in Puglia
+                </div>
+            </div>
+        </div>
+
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script>
             $(function () {
+                $(".bottone_preferiti").on("click", "a", function () {
+                    var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
+                    var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
+                    if (arrayPreferiti === null) {
+                        arrayPreferiti = [];
+                    }
+                    if (arrayNomiPreferiti === null) {
+                        arrayNomiPreferiti = [];
+                    }
+                    arrayPreferiti[0] = $(this).parent().children('button').attr("data-target");
+                    arrayNomiPreferiti[0] = $(this).parent().children('button').html();
+                    localStorage["a_preferiti"] = JSON.stringify(arrayPreferiti);
+                    localStorage["a_n_preferiti"] = JSON.stringify(arrayNomiPreferiti);
+                    if ($(this).children('a i').hasClass("preferito")) {
+                        $(this).children('a i').css("color", "black");
+                        $(this).children('a i').removeClass("preferito");
+                    } else {
+                        /*$( this ).parent().children('button').attr("data-target" , "#castello");*/
+                        $(this).children('a i').css("color", "blue");
+                        $(this).children('a i').addClass("preferito");
+                    }
+                });
+                /*function preferiti() {
+                 
+                 var arrayPref = JSON.parse(window.localStorage.getItem("preferiti"));
+                 if (arrayPref === null) {
+                 arrayPref = [];
+                 }
+                 var idPreferito = url;
+                 var posPreferito = $.inArray(idPreferito, arrayPref);
+                 if (posPreferito != -1) {
+                 arrayPref.splice(posPreferito, 1);
+                 } else {
+                 arrayPref.push(idPreferito);
+                 }
+                 window.localStorage.setItem("preferiti", JSON.stringify(arrayPref));
+                 }*/
+                $("#home").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#luoghi").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#itinerari").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#gallery").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#arrivarci").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#contattaci").on("pageshow", function () {
+                    $('#preferiti').empty();
+                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
+                    $('#preferiti').append(html);
+                });
+                $("#preferiti").on("pageshow", function () {
 
+                    var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
+                    var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
+                    var html = '<button type="button" class="btn btn-primary" data-toggle="modal" class="cancella" data-target="' + arrayPreferiti[0] + '" style="width: 100%;">' + arrayNomiPreferiti[0] + '</button></div>';
+                    $('#preferiti').append(html);
+                });
+                $("#contatta").submit(function () {
+                    var object = {
+                        nome: $("#nome").val(), //#nome = id input nome
+                        email: $("#email").val(), //#nome = id input email
+                        oggetto: $("#oggetto").val(), //#nome = id input oggetto
+                        testo: $("#messaggio").val() //#nome = id input testo
+                    };
+                    console.log($("#nome").val());
+                    $.ajax({
+                        url: 'https://appgravina.firebaseio.com/contatti.json',
+                        type: "POST",
+                        dataType: 'json',
+                        data: JSON.stringify(object) //trasforma object in json
+                    }).done(function (data) { //se tutto ok
+                        alert("Email inviata");
+                    })
+                            .fail(function () { // se c'è stato un problema
+                                alert("Errore!");
+                            });
+                });
                 var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
                     var index = $('.bs-component').index($(this).parent());
                     $.get(window.location.href, function (data) {
@@ -575,26 +695,20 @@ and open the template in the editor.
                     })
 
                 });
-
                 $('.bs-component [data-toggle="popover"]').popover();
                 $('.bs-component [data-toggle="tooltip"]').tooltip();
-
                 $(".bs-component").hover(function () {
                     $(this).append($button);
                     $button.show();
                 }, function () {
                     $button.hide();
                 });
-
                 function cleanSource(html) {
                     var lines = html.split(/\n/);
-
                     lines.shift();
                     lines.splice(-1, 1);
-
                     var indentSize = lines[0].length - lines[0].trim().length,
                             re = new RegExp(" {" + indentSize + "}");
-
                     lines = lines.map(function (line) {
                         if (line.match(re)) {
                             line = line.substring(indentSize);
@@ -602,18 +716,14 @@ and open the template in the editor.
 
                         return line;
                     });
-
                     lines = lines.join("\n");
-
                     return lines;
                 }
 
                 $(".icons-material .icon").each(function () {
                     $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
                 });
-
             })();
-
         </script>
         <script src="dist/js/ripples.min.js"></script>
         <script src="dist/js/material.min.js"></script>
@@ -630,7 +740,6 @@ and open the template in the editor.
                         max: 100
                     }
                 });
-
                 $(".svert").noUiSlider({
                     orientation: "vertical",
                     start: 40,
