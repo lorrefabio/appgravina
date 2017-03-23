@@ -578,20 +578,22 @@ and open the template in the editor.
                 <a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a>
                 <h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1>
             </div>
-            <div id="cancella_preferiti" data-role="main" class="ui-content">
-
-
-
-                <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <div id="main_preferiti" data-role="main" class="ui-content">
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false">
                     &copy; 2017 Gravina in Puglia
-                </div>
             </div>
         </div>
 
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="Gruntfile.js" type="text/javascript"></script>
+        <script src="grunt/configBridge.json" type="text/javascript"></script>
+        <script src="package.json" type="text/javascript"></script>
+        
         <script>
             $(function () {
                 $(".bottone_preferiti").on("click", "a", function () {
+                    $("#main_preferiti").load(location.href + " #main_preferiti");
                     var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
                     var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
                     if (arrayPreferiti === null) {
@@ -613,58 +615,16 @@ and open the template in the editor.
                         $(this).children('a i').addClass("preferito");
                     }
                 });
-                /*function preferiti() {
-                 
-                 var arrayPref = JSON.parse(window.localStorage.getItem("preferiti"));
-                 if (arrayPref === null) {
-                 arrayPref = [];
-                 }
-                 var idPreferito = url;
-                 var posPreferito = $.inArray(idPreferito, arrayPref);
-                 if (posPreferito != -1) {
-                 arrayPref.splice(posPreferito, 1);
-                 } else {
-                 arrayPref.push(idPreferito);
-                 }
-                 window.localStorage.setItem("preferiti", JSON.stringify(arrayPref));
-                 }*/
-                $("#home").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
-                $("#luoghi").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
-                $("#itinerari").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
-                $("#gallery").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
-                $("#arrivarci").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
-                $("#contattaci").on("pageshow", function () {
-                    $('#preferiti').empty();
-                    var html = ' <div data-role="panel" data-display="overlay" id="panel6" style="width:70%;"><div class="btn-group-vertical" style="width: 100%;"><ul class="" style="list-style-type: none;margin-left: -60px;"><li><a href="#home" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #059;">home</i>Home</a></li><li><a href="#luoghi" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">account_balance</i>Luoghi da Visitare</a></li><li><a href="#itinerari" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #08b;">touch_app</i>Itinerari Consigliati</a></li><li><a href="#gallery" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #ec971f;">wallpaper</i>Gallery</a></li><li><a href="#arrivarci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #333;">accessibility</i>Come Raggiungerci</a></li><li><a href="#contattaci" class="btn btn-default"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #4d5ec1;">mail_outline</i>Contattaci</a></li><li><a href="#preferiti" class="btn btn-default" id="btn_preferiti"><i class="material-icons" style="margin-top: -5px; margin-right: 20px; color: #c9302c">grade</i>Luoghi Preferiti</a></li></ul></div></div><div  data-role="header" data-position="fixed" style="background-color: #806a0d; height:50px;"><a href="#panel6" class="btn btn-default" style="margin-top:5px;height: 30px; float: left; background-color: #806a0d;"><i class="material-icons" style="margin-top:-6px; color: #FFF;">dehaze</i></a><h1 style="color: #FFF; text-shadow: 1px 0px #000000; margin-top:10px;"><b>I Tuoi Luoghi Preferiti</b></h1></div><div id="cancella_preferiti" data-role="main" class="ui-content"><div data-role="footer" data-position="fixed" data-tap-toggle="false">&copy; 2017 Gravina in Puglia</div></div> ';
-                    $('#preferiti').append(html);
-                });
+        
                 $("#preferiti").on("pageshow", function () {
-
                     var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
                     var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
-                    var html = '<button type="button" class="btn btn-primary" data-toggle="modal" class="cancella" data-target="' + arrayPreferiti[0] + '" style="width: 100%;">' + arrayNomiPreferiti[0] + '</button></div>';
-                    $('#preferiti').append(html);
+                    var html = '<button type="button" class="btn btn-primary" data-toggle="modal" class="bottone_creato" data-target="' + arrayPreferiti[0] + '" style="width: 100%;">' + arrayNomiPreferiti[0] + '</button></div>';
+                    
+                    $('#main_preferiti').append(html);
                 });
+                
+                
                 $("#contatta").submit(function () {
                     var object = {
                         nome: $("#nome").val(), //#nome = id input nome
@@ -672,7 +632,6 @@ and open the template in the editor.
                         oggetto: $("#oggetto").val(), //#nome = id input oggetto
                         testo: $("#messaggio").val() //#nome = id input testo
                     };
-                    console.log($("#nome").val());
                     $.ajax({
                         url: 'https://appgravina.firebaseio.com/contatti.json',
                         type: "POST",
