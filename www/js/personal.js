@@ -8,7 +8,7 @@ $(function () {
      localStorage["a_preferiti"] = JSON.stringify(arrayPreferiti);
      localStorage["a_n_preferiti"] = JSON.stringify(arrayNomiPreferiti);
      });*/
-    $("#luoghi").on("pageshow", function () {
+    /*$("#luoghi").on("pageshow", function () {
         var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
         var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
         var ultimo = 0;
@@ -22,7 +22,7 @@ $(function () {
 
             }
         }
-    });
+    });*/
     $("a#preferiti").on("click", function () {
         $("#main_preferiti").load(location.href + " #main_preferiti");
     });
