@@ -1,13 +1,13 @@
 $(function () {
-    /*$("#cancella_tutto").on("click", function () {
-     $("#main_preferiti").load(location.href + " #main_preferiti");
+    $("#cancella_tutto").on("click", function () {
      var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
      var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
      arrayPreferiti = [];
      arrayNomiPreferiti = [];
      localStorage["a_preferiti"] = JSON.stringify(arrayPreferiti);
      localStorage["a_n_preferiti"] = JSON.stringify(arrayNomiPreferiti);
-     });*/
+     $("#main_preferiti").load(location.href + " #main_preferiti");
+     });
     /*$("#luoghi").on("pageshow", function () {
         var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
         var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
