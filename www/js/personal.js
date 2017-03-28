@@ -1,28 +1,33 @@
 $(function () {
+    if(typeof localStorage["a_preferiti"] == "undefined") {
+        localStorage["a_preferiti"] = "[]";
+        localStorage["a_n_preferiti"] = "[]";
+    }
+    
     $("#cancella_tutto").on("click", function () {
-     var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
-     var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
-     arrayPreferiti = [];
-     arrayNomiPreferiti = [];
-     localStorage["a_preferiti"] = JSON.stringify(arrayPreferiti);
-     localStorage["a_n_preferiti"] = JSON.stringify(arrayNomiPreferiti);
-     $("#main_preferiti").load(location.href + " #main_preferiti");
-     });
-    /*$("#luoghi").on("pageshow", function () {
         var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
         var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
-        var ultimo = 0;
-        while (arrayPreferiti[ultimo]) {
-            ultimo++;
-        }
-        for (var i = 0; i < ultimo; i++) {
-            if (arrayPreferiti[i] === "#cattedrale") {
-                $('.cattedrale').parent().children('a i').css("color", "blue");
-                $('.cattedrale').parent().children('a i').addClass("preferito");
-
-            }
-        }
-    });*/
+        arrayPreferiti = [];
+        arrayNomiPreferiti = [];
+        localStorage["a_preferiti"] = JSON.stringify(arrayPreferiti);
+        localStorage["a_n_preferiti"] = JSON.stringify(arrayNomiPreferiti);
+        $("#main_preferiti").load(location.href + " #main_preferiti");
+    });
+    /*$("#luoghi").on("pageshow", function () {
+     var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
+     var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
+     var ultimo = 0;
+     while (arrayPreferiti[ultimo]) {
+     ultimo++;
+     }
+     for (var i = 0; i < ultimo; i++) {
+     if (arrayPreferiti[i] === "#cattedrale") {
+     $('.cattedrale').parent().children('a i').css("color", "blue");
+     $('.cattedrale').parent().children('a i').addClass("preferito");
+     
+     }
+     }
+     });*/
     $("a#preferiti").on("click", function () {
         $("#main_preferiti").load(location.href + " #main_preferiti");
     });
@@ -87,7 +92,9 @@ $(function () {
         var arrayPreferiti = JSON.parse(localStorage["a_preferiti"]);
         var arrayNomiPreferiti = JSON.parse(localStorage["a_n_preferiti"]);
         var i = 0;
-
+        if (arrayPreferiti === null) {
+            arrayPreferiti = [];
+        }
         while (arrayPreferiti[i]) {
             var html = '<button type="button" class="btn btn-primary" data-toggle="modal" class="bottone_creato" data-target="' + arrayPreferiti[i] + '" style="width: 100%; color:#806a0d">' + arrayNomiPreferiti[i] + '</button></div>';
             $('#main_preferiti').append(html);
